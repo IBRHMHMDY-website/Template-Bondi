@@ -1,0 +1,215 @@
+:root{
+    --red-color: #ff3150;
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --yellow-color: #ffc400;
+    --light-color: #eff7fa;
+    --grey-color:#eff7fa;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.facebook:hover{
+    background-color: #1877f2;
+}
+.twitter:hover{
+    background-color: #1da1f2;
+}
+.youtube:hover{
+    background-color: #ff0000;
+}
+.linkedin:hover{
+    background-color: #0077b5;
+}
+.btn-red{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.btn-red:focus{
+    box-shadow: none;
+}
+.btn-red:hover{
+    color: white;
+}
+.section-title::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 130px;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: var(--green-color);
+}
+/* NavBar Section */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    border-color: var(--green-color);
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search svg{
+    color: var(--green-color);
+    cursor: pointer;
+}
+/* End NavBar Section */
+/* Landing Section */
+.landing{
+    background-color: var(--dark-color);
+    height: 100vh;
+}
+.landing .btn-red{
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+}
+/* Landing Section */
+/* Features Section */
+.features .box .icon-holder {
+    height: 200px;
+}
+.features .box .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .box .icon-holder .number{
+    font-size: 12rem;
+    color: var(--grey-color);
+}
+.features .box .icon-holder .icon {
+    color: var(--green-color);
+    font-size: 4.5rem;
+}
+.features .box h4 {
+    color: var(--yellow-color);
+}
+/* End Features Section */
+/* Our Work Section */
+.our-work{
+    background-color: var(--grey-color);
+}
+.our-work .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box {
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 57%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    overflow: hidden;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+/* End Our Work Section */
+/* Stuff Section */
+.stuff .desc{
+    max-width: 600px;
+}
+.stuff .btn-red {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/* End Stuff Section */
+/* Our Team Section */
+.our-team{
+    background-color: var(--grey-color);
+
+}
+.our-team .section-head h2{
+    color: var(--yellow-color);
+}
+.our-team .box .title{
+    background-color: var(--green-color);
+    color: white;
+}
+/* End Our Team Section */
+/* Projects Section */
+.projects {
+    background-color: var(--dark-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+/* End Projects Section */
+/* Technologies, Blogs Sections
+** Style by Bootstrap 5 
+** End Technologies, Blogs Sections */
+/* Subscribes Section */
+.subscribes{
+    background-color: var(--yellow-color);
+}
+.subscribes .input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    transition: 0.3s;
+}
+.subscribes .input::placeholder{
+    color: var(--grey-color);
+    transition: 0.3s ease-in-out;
+}
+.subscribes .input:focus{
+    outline: none;
+    border-bottom-color: black;
+}
+.subscribes .input:focus::placeholder{
+    opacity: 0;
+}
+/* End Subscribes Section */
+/* Footer Section */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright span{
+    color: var(--yellow-color);
+}
+
+.footer ul li:hover svg{
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* End Footer Section */
